@@ -9,10 +9,10 @@ body{counter-reset:h1 6}
 </style>
 <link rel=stylesheet media='only screen and (max-device-width: 480px)' href=mobile.css>
 <link rel=prefetch href=index.html>
-<p>You are here: <a href=index.html>Home</a> <span class=u>&#8227;</span> <a href=table-of-contents.html#geolocation>Dive Into <abbr>HTML5</abbr></a> <span class=u>&#8227;</span>
+<p>You are here: <a href=index.html>Home</a> <span class=u>&#8227;</span> <a href=table-of-contents.html#geolocation>Dive Into <abbr>HTML5</abbr></a> <span class=u>&#8227;</span></p>
 <h1><br>Você Está Aqui<br>(Assim Como Todo Mundo Está)</h1>
-<p id=toc>&nbsp;
-<p class=a>&#x2767;
+<p id=toc>&nbsp;</p>
+<p class=a>&#x2767;</p>
 <h2 id=divingin>Mergulhando</h2>
 
 <p class=f><img src=i/aoc-g.png alt=G width=106 height=103>eolocalização é a arte de descobrir aonde você está no mundo e (opcionalmente) compartilhar essa informação com as pessoas que você confia. Há mais de uma maneira de descobrir aonde você está &mdash; seu endereço <abbr>IP</abbr>, sua conexão de rede sem fio, com que torre de celular seu telefone está falando, ou usando hardware <abbr>GPS</abbr> dedicado que calcula latitude e longitude da informação enviada por satélites no céu.</p>
@@ -27,25 +27,27 @@ R: Privacidade é uma preocupação óbvia quando se está falando sobre compart
 </div>
 </div>
 
-<p class=a>&#x2767;
+<p class=a>&#x2767;</p>
 
-<h2 id=w3c>The Geolocation API</h2>
+<h2 id=w3c>A API de Geolocalização</h2>
 
-<p>The <a href=http://www.w3.org/TR/geolocation-API/>geolocation <abbr>API</abbr></a> lets you share your location with trusted web sites. The latitude and longitude are available to JavaScript on the page, which in turn can send it back to the remote web server and do fancy location-aware things like finding local businesses or showing your location on a map.
+<p>A <a href=http://www.w3.org/TR/geolocation-API/><abbr>API</abbr> de geolocalização</a> permite que você compartilhe sua localização com sites web que você confia. A latitude e longitude estão disponíveis para o JavaScript na página, que por sua vez pode enviá-lo ao servidor web remoto e fazer coisas legais como procurar lojas na sua região ou exibir a sua localização em um mapa.</p>
 
-<p>As you can see from the following table, the geolocation <abbr>API</abbr> is supported by most browsers on the desktop and mobile devices. Additionally, some older browsers and devices can be supported by wrapper libraries, as we&#8217;ll see later in this chapter.
+<p>Como você pode ver na tabela a seguir, a <abbr>API</abbr> de geolocalização é suportada pela maioria dos navegadores desktop e em dispositivos móveis. Adicionalmente, alguns navegadores e dispositivos antigos podem ser suportados por bibliotecas auxiliares, como veremos mais tarde neste capítulo.</p>
 
 <table class=bc>
-<caption>Geolocation <abbr>API</abbr> support</caption>
+<caption>Suporte à <abbr>API</abbr> de Geolocalização</caption>
 <thead>
-<tr><th title="Internet Explorer">IE<th title="Mozilla Firefox">Firefox<th title="Apple Safari">Safari<th title="Google Chrome">Chrome<th>Opera<th>iPhone<th>Android
+<tr><th title="Internet Explorer">IE</th><th title="Mozilla Firefox">Firefox</th><th title="Apple Safari">Safari</th><th title="Google Chrome">Chrome</th><th>Opera</th><th>iPhone</th><th>Android</th></tr>
+</thead>
 <tbody>
-<tr><td>9.0+<td>3.5+<td>5.0+<td>5.0+<td>10.6+<td>3.0+<td>2.0+
+<tr><td>9.0+</td><td>3.5+</td><td>5.0+</td><td>5.0+</td><td>10.6+</td><td>3.0+</td><td>2.0+</td></tr>
+</tbody>
 </table>
 
-<p>Along with support for the standard geolocation <abbr>API</abbr>, there are a plethora of device-specific <abbr>API</abbr>s on other mobile platforms. I&#8217;ll cover all that later in this chapter.
+<p>Além do suporte à <abbr>API</abbr> de geolocalização padrão, existe uma série de <abbr>API</abbr>s específicas em outras plataformas móveis. Irei cobrir todas elas neste capítulo.</p>
 
-<p class=a>&#x2767;
+<p class=a>&#x2767;</p>
 
 <h2 id=the-code>Show Me The Code</h2>
 
